@@ -1,0 +1,14 @@
+{
+    // 启用 GitDoc 插件，让它在这个项目中生效
+    "gitdoc.enabled": true,
+    // 这是核心功能：在提交后，自动推送到远程仓库
+    "gitdoc.push": true,
+    // 设置自动推送的目标分支为 "main"
+    "gitdoc.pushBranch": "main",
+    // 设置自动提交时使用的描述信息格式
+    // %d 会被替换为日期, %t 会被替换为时间
+    "gitdoc.commitMessageFormat": "auto-sync: %d %t",
+    // 在你按下保存后，等待10秒再执行同步操作
+    // 这可以防止你频繁保存时产生大量无效的提交
+    "gitdoc.saveDelay": 10000
+}
